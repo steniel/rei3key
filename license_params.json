@@ -1,6 +1,6 @@
 {
-    "LicenseId": "3afc098f-760f-4552-91ba-daee44af728a",
-    "clientId": "3afc098f-760f-4552-91ba-daee44af728a",
+    "LicenseId": "uuid-here",
+    "clientId": "uuid-here",
     "extensions": ["*"],
     "loginCount": 40,
     "registeredFor": "STN",
