@@ -33,3 +33,7 @@ openssl rsa -in privkey.pem -pubout -out pubkey.pem
 
 Convert to RSA format:
 openssl rsa -in public.pem -pubin -RSAPublicKey_out -out rsa_public.pem
+
+# Modify number of concurrent licenses (1:N)
+1. Edit config/config.go on line: 93: return license.LoginCount * N
+2. Edit www/stores/store.js on line 41: loginLimitedFactor:N, where N is the factor * logincount(unlimited users)
