@@ -24,3 +24,12 @@ or
 Open your R3 instance, go to System menu --> Activate License, upload mylicense.lic 
 to activate the license.
 
+How to generate public/private key pair:
+# private key
+openssl genrsa -out privkey.pem 2048
+
+# public key
+openssl rsa -in privkey.pem -pubout -out pubkey.pem
+
+Convert to RSA format:
+openssl rsa -in public.pem -pubin -RSAPublicKey_out -out rsa_public.pem
