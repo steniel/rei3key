@@ -26,10 +26,10 @@ to activate the license.
 
 How to generate public/private key pair:
 # private key
-openssl genrsa -out privkey.pem 2048
+openssl genrsa -out private.pem 16384
 
 # public key
-openssl rsa -in privkey.pem -pubout -out pubkey.pem
+openssl rsa -in private.pem -pubout -out public.pem
 
 Convert to RSA format:
 openssl rsa -in public.pem -pubin -RSAPublicKey_out -out rsa_public.pem
